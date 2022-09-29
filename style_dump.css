@@ -1,0 +1,606 @@
+* {
+    font-size: 25px;
+}
+.logo {
+    width: 278px;
+    margin: auto;
+    margin-top: 38px;
+}
+
+
+.menu {
+    list-style: none;
+    text-align: center;
+    height: 78px;
+    padding-top: 15px;
+    margin-bottom: 5px;
+}
+/* my css */
+ul#menu-nav-menu {
+    border-top: 1px solid #CDCDCD;
+    border-bottom: 1px solid #CDCDCD;
+}
+.menu li a {
+    color: #000;
+    text-decoration: none;
+}
+.footer-logo img {
+    width:181px;
+}
+/* end of my css */
+.menu li {
+    display: inline;
+    font-size: 27px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.banner {
+    width: 1439px;
+    height: 577px;
+}
+
+.heading {
+    width: 100%;
+    height: 600px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.left-text, .right-image{
+    width: 50%;
+    height: 600px;
+}
+.left-text h1{
+    font-size: 50px;
+}
+
+.left-text p {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 157.7%;
+}
+
+.pair {
+    height: 291px;
+    width: 348px;
+}
+.right-image {padding: 40px;}
+.img1 {
+}
+.img2 {
+    margin-top: -155px;
+    margin-left: 157px;
+
+}
+
+.listitems {
+    width: 1315px;
+    margin: auto;
+}
+.listitems button{
+    background-color: #056E31;
+    color: white;
+    height: 66px;
+    width: 397px;
+    margin-right: 36px;
+    margin-bottom: 20px;
+    border: none;
+}
+.map {
+    width: 1240px;
+    height: 439px;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+}
+.we {
+    height: 320px;;
+    width: 1243px;
+    text-align: center; 
+    margin: auto;
+    margin-top: 100px;
+}
+.we h1 {
+    margin-bottom: 58px;
+    font-size: 40px;
+}
+footer {
+    width: 1440px;
+    height: 196px;
+    border-top: 1px solid #CDCDCD;
+    border-bottom: 1px solid #CDCDCD;
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+}
+
+.footer-message {
+    font-size: 25px;
+    width: 744px;
+    line-height: 180%;
+    line-height: 180%;
+    margin-left: 245px;
+}
+
+.copyright {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 157.7%;
+    text-align: center;
+    height: 90px;
+    padding-top: 24px;
+}
+
+/* RESPONSIVENESS */
+/* 1440,1024,768,425,375,320 */
+
+/* Mobile Responsive Breakpoint 1024px */
+@media only screen and (max-width: 1024px) {
+    .banner {
+        width: 1024px;
+        height: 350px;
+    }
+    .banner img {
+        width: 1024px;
+    }
+    .heading {
+        width: 1024px;
+        height: 420px;
+        padding-left: 50px;
+        padding-right: 50px;     
+    }
+    .left-text h1 {
+        font-size: 43px;
+    }
+    .pair img {
+        width: 230px;
+    }
+    .pair{
+        width: 230px;
+    }
+    .pair 
+    .left-text h1 {
+    font-size: 43px;
+    }
+    .listitems {
+        width: 875px;
+        margin: auto;
+    }
+    .map {
+        width: 1024px;
+        height: 365px;
+    }
+    .map img{
+        width: 1024px;
+    }
+
+    .we{
+        width: 1024px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    footer {
+        width: 1024px;
+        height: 235px;
+    }
+    .footer-message {
+        margin-left: 100px;
+    }
+    .copyright {
+        width: 1024px;
+    }
+}
+
+/* Mobile Responsive Breakpoint 768px */
+@media only screen and (max-width: 768px) {
+    * {
+        font-size: 20px;
+    }
+    .menu {
+        padding-top: 10px;
+        height: 57px;
+    }
+    .menu li {
+        font-size: 15px;
+    }
+    .banner {
+        width: 768px;
+        height: 350px;
+    }
+    .banner img {
+        width: 768px;
+    }
+    .heading {
+        width: 768px;
+        height: 420px;
+        padding-left: 50px;
+        padding-right: 50px;  
+        margin-top: 20px;   
+    }
+    .left-text h1 {
+        font-size: 31px;
+    }
+    .pair img {
+        width: 215px;
+    }
+    .pair{
+        width: 215px;
+    }
+    .img2 {
+        margin-left: 95px;
+    }
+    
+    .listitems {
+        width: 748px;
+        margin-left: 25px;
+    }
+    .listitems button {
+        height: 66px;
+        width: 345px;
+        margin-right: 25px;
+    }
+    .map {
+        width: 768px;
+        height: 274px;
+    }
+    .map img{
+        width: 768px;
+    }
+
+    .we{
+        width: 768px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    footer {
+        width: 768px;
+        height: 275px;
+
+    }
+    .footer-message {
+        margin-left: 70px;
+    }
+    .copyright {
+        width: 768px;
+    }
+}
+/* Mobile Responsive Breakpoint 425px */
+@media only screen and (max-width: 425px) {
+    * {
+        font-size: 17px;
+        line-height: 1.8;
+    }
+    .menu {
+        padding-top: 10px;
+        height: 57px;
+    }
+    .menu li {
+        font-size: 13px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .banner {
+        width: 425px;
+        height: 172px;
+    }
+    .banner img {
+        width: 425px;
+    }
+    .heading {
+        width: 425px;
+        height: 1053px;
+        padding-left: 50px;
+        padding-right: 50px;  
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;   
+    }
+
+    .left-text, .right-image {
+        width: 100%;
+        height: 360px;
+    }
+    .left-text h1 {
+        font-size: 30px;
+    }
+    .left-text p {
+        text-align: justify;
+    }
+
+    .right-image {
+        padding: 0;
+    }
+    .pair img {
+        width: 100%;
+    }
+    .pair{
+        width: 100%;
+    }
+    .img2 {
+        margin: 0;
+    }
+    
+    .listitems {
+        width: 425px;
+        margin: 0;
+        padding-left: 42px;
+    }
+    .listitems button {
+        height: 66px;
+        width: 345px;
+        margin-right: 25px;
+    }
+    .map {
+        width: 425px;
+        height: 152px;
+    }
+    .map img{
+        width: 425px;
+    }
+
+    .we{
+        width: 425px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .we h1 {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    footer {
+        width: 425px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+    .footer-logo {
+        width: 70%;
+        margin: auto;
+    }
+    .footer-logo img{
+        width: 100%;
+    }
+    .footer-message {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .copyright {
+        width: 425px;
+    }
+}
+/* Mobile Responsive Breakpoint 375px */
+@media only screen and (max-width: 375px) {
+    * {
+        font-size: 17px;
+        line-height: 1.8;
+    }
+    .menu {
+        padding-top: 10px;
+        height: 57px;
+    }
+    .menu li {
+        font-size: 13px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .banner {
+        width: 375px;
+        height: 172px;
+    }
+    .banner img {
+        width: 375px;
+    }
+    .heading {
+        width: 375px;
+        height: 860px;
+        padding-left: 25px;
+        padding-right: 25px; 
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;   
+    }
+
+    .left-text, .right-image {
+        width: 100%;
+        height: 360px;
+    }
+    .left-text h1 {
+        font-size: 30px;
+    }
+    .left-text p {
+        text-align: justify;
+    }
+
+    .right-image {
+        padding: 0;
+    }
+    .pair img {
+        width: 100%;
+    }
+    .pair{
+        width: 100%;
+    }
+    .img2 {
+        margin: 0;
+    }
+    
+    .listitems {
+        width: 375px;
+        margin: 0;
+        padding-left: 15px;
+    }
+    .listitems button {
+        height: 66px;
+        width: 345px;
+        margin-right: 0px;
+    }
+    .map {
+        width: 375px;
+        height: 152px;
+    }
+    .map img{
+        width: 375px;
+    }
+
+    .we{
+        width: 375px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-bottom: 5px;
+    }
+
+    .we h1 {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    footer {
+        width: 375px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+    .footer-logo {
+        width: 70%;
+        margin: auto;
+    }
+    .footer-logo img{
+        width: 100%;
+    }
+    .footer-message {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .copyright {
+        width: 300px;
+        margin: auto;
+    }
+}
+
+
+/* Mobile Responsive Breakpoint 320px */
+
+@media only screen and (max-width: 320px) {
+    * {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+    .menu {
+        padding-top: 10px;
+        height: 75px;
+    }
+    .menu li {
+        font-size: 13px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .banner {
+        width: 350px;
+        height: 172px;
+    }
+    .banner img {
+        width: 350px;
+    }
+    .heading {
+        width: 320px;
+        height: 860px;
+        padding-left: 25px;
+        padding-right: 25px; 
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;   
+    }
+
+    .left-text, .right-image {
+        width: 100%;
+        height: 360px;
+    }
+    .left-text h1 {
+        font-size: 25px;
+    }
+    .left-text p {
+        text-align: justify;
+    }
+
+    .right-image {
+        padding: 0;
+    }
+    .pair img {
+        width: 100%;
+    }
+    .pair{
+        width: 100%;
+    }
+    .img2 {
+        margin: 0;
+    }
+    
+    .listitems {
+        width: 300px;
+        margin: 0;
+        padding-left: 15px;
+    }
+    .listitems button {
+        height: 66px;
+        width: 285px;
+        margin-right: 0px;
+    }
+    .map {
+        width: 320px;
+        height: 152px;
+    }
+    .map img{
+        width: 320px;
+    }
+
+    .we{
+        width: 320px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-bottom: 5px;
+    }
+
+    .we h1 {
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+    footer {
+        width: 320px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+    .footer-logo {
+        width: 70%;
+        margin: auto;
+    }
+    .footer-logo img{
+        width: 100%;
+    }
+    .footer-message {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .copyright {
+        width: 320px;
+        margin: auto;
+    }
+}
