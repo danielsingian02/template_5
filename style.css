@@ -422,4 +422,91 @@ footer .copyright {
 }
 .site-content-search article:hover a {
   color: inherit;
+}
+
+.site-content-404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+  min-height: 50vh;
+}
+.site-content-404 .entry-header {
+  background-color: initial;
+}
+.site-content-404 form .text-404 {
+  border: 1px solid black;
+  padding: 0.25rem 0.5rem;
+}
+.site-content-404 form .submit {
+  background-color: #056E31;
+  color: white;
+  padding: 0.3rem 0.5rem;
+  border: 0;
+}
+.site-content-404 .home-link {
+  margin-top: 0.5rem;
+}
+.site-content-404 a {
+  text-decoration: none;
+}
+.site-content-404 .fa {
+  margin-right: 0.2rem;
+}
+@media only screen and (max-width: 767px) {
+  .site-content-404 {
+    padding: 4rem 2rem;
+  }
+}
+
+.site-content-search {
+  color: black;
+}
+.site-content-search header {
+  background-color: initial;
+}
+.site-content-search > .search-results {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: inherit;
+  padding: 4rem;
+}
+@media only screen and (max-width: 1024px) {
+  .site-content-search > .search-results {
+    padding: 1rem;
+  }
+}
+.site-content-search article {
+  border: 2px solid black;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.site-content-search article a {
+  text-decoration: none;
+  color: black;
+}
+.site-content-search article + article {
+  margin-top: 1rem;
+}
+.site-content-search article .content {
+  margin: 1.5rem;
+  overflow: hidden;
+  min-height: 100%;
+  max-height: 15rem;
+}
+.site-content-search article .entry-header-search {
+  font-weight: 700;
+}
+.site-content-search article .entry-content-search {
+  white-space: nowrap;
+  word-break: break-all;
+  overflow: hidden;
+}
+.site-content-search article:hover {
+  border-color: #056E31;
+  color: #056E31;
+}
+.site-content-search article:hover a {
+  color: inherit;
 }/*# sourceMappingURL=style.css.map */
