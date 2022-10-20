@@ -590,3 +590,43 @@ footer {
         }
     }
 }
+
+// Archive
+
+// Read More
+.container {
+    padding: 1rem;
+
+    & .media {
+        border: 2px solid black;
+        border-radius: 12px;
+        color: black;
+
+        & .media-content {
+            margin: 1.5em;
+
+            & .read-more {
+                background-color: $primary-color;
+                padding: 0.7rem 1rem;
+                color: white;
+                width: fit-content;
+                margin-top: 1rem;
+                border-radius: 12px;
+            }
+        }
+
+        & a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        &:hover{
+            border-color: $primary-color;
+            color: $primary-color;
+        }
+    }
+
+    @media #{ $media_mobile } {
+        padding: 0;
+    }
+}
