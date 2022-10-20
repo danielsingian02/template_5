@@ -2,44 +2,45 @@
 get_header();
 ?>
 
-  <div class="single_page">
-    <?php
-    while ( have_posts() ) :
+<div class="single-page">
+	<?php
+	while ( have_posts() ) :
 
-    the_post();
-    ?>
+		the_post();
+		?>
+  
+		<article <?php post_class(); ?> >
+		
+			<?php the_post_thumbnail( 'my-custom-image-size' ); ?>
 
-    <article <?php post_class(); ?>>
+			<header class="entry-header">
 
-	  <?php the_post_thumbnail( 'my-custom-image-size' ); ?>
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		
+			</header><!-- .entry-header -->
 
-      <header class="entry-header">
-        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-      </header><!-- .entry-header -->
+			<div class="entry-content">
+				<?php the_content(); ?>
+			</div><!-- .entry-content -->
 
-      <div class="entry-content">
-        <?php the_content(); ?>
-      </div><!-- .entry-content -->
+			<div class="meta mb-3"> 
+				<span class="date"> <?php the_date(); ?> </span>   
+				<span class="comment"><a href="#comments"><i class='fas fa-comment'></i> <?php comments_number(); ?> </span>   </a></span>
+			</div> 
 
-        <div class="meta mb-3"> 
-            <span class="date"> <?php the_date(); ?> </span>   
-            <span class="comment"><a href="#comments"><i class='fas fa-comment'></i> <?php comments_number(); ?> </span>   </a></span>
-        </div> 
-        
-    </article><!-- #post-## -->
-        <div class="content">
-        <?PHP
-        comments_template();
-        ?>
-        </div>
-    <?php
+			<div class="content">
+				<?php
+					esc_html( comments_template() );
+				?>
+			</div>
+			
+		</article><!-- #post -->
 
-
-  endwhile;
+		<?php
+	endwhile;
 	?>
-	</div><!-- .site-content -->
+</div>
+
 <?php
-
-
 get_footer();
 ?>
