@@ -6,15 +6,420 @@ Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-me
 Author: iPhiTech IT Digital Solutions Corporation
 Author URI: iPhiTech IT Digital Solutions Corporation
 */
+@font-face {
+  font-family: "AirFactoryRounded";
+  src: url("fonts/Air Factory Rounded.ttf");
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
-/* header*/
+img {
+  width: 100%;
+  display: block;
+}
 
-.container {
+.hamburger {
+  display: none;
+  margin-left: auto;
+  border: 0;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem 2rem 1rem 0;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #056E31;
+}
+@media only screen and (max-width: 1024px) {
+  .hamburger {
+    display: block;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+header {
+  font-family: "AirFactoryRounded", sans-serif;
+  color: black;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+@media only screen and (max-width: 1024px) {
+  header .header-ctn {
+    justify-content: right !important;
+  }
+}
+header .menu {
+  border-top: 1px solid #CDCDCD;
+  border-bottom: 1px solid #CDCDCD;
+}
+header ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  -moz-column-gap: 57px;
+       column-gap: 57px;
+}
+@media only screen and (max-width: 990px) {
+  header ul {
+    flex-direction: column;
+    justify-content: left;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header ul {
+    flex-direction: column;
+    justify-content: left;
+  }
+}
+header li {
+  display: inline-flex;
+}
+header li.current_page_item {
+  border-bottom: 4px solid #056E31;
+}
+header a {
+  text-decoration: none;
+  padding: 1rem 0rem;
+  color: inherit;
+}
+header a:hover {
+  color: #056E31;
+}
+
+.current-menu-item {
+  margin-top: auto;
+  border-bottom: 4px solid #056E31;
+}
+@media only screen and (max-width: 768px) {
+  .current-menu-item {
+    border-bottom: 0;
+    border-left: 4px solid #056E31;
+  }
+}
+
+.banner > img {
+  width: 100%;
+}
+
+.heading {
+  width: 100%;
+  padding: 6.75rem;
+  padding-bottom: 0 !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  font-family: "AirFactoryRounded", Arial, Helvetica, sans-serif;
+}
+.heading .left-text, .heading .right-image {
+  width: 100%;
+}
+.heading .left-text > h1 {
+  font-size: 3.125rem;
+  font-weight: 400;
+  margin-bottom: 3.625rem;
+}
+@media only screen and (max-width: 767px) {
+  .heading .left-text > h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+.heading .left-text > p {
+  font-size: 1.563rem;
+  font-weight: 400;
+  line-height: 2.464rem;
+}
+.heading .right-image {
+  display: grid;
+  grid-template-columns: repeat(8fr, 8fr);
+  position: relative;
+}
+.heading .right-image > .img1-pair {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row: 1;
+  z-index: -1;
+}
+.heading .right-image > .img2-pair {
+  grid-column-start: 3;
+  grid-column-end: 8;
+  grid-row: 1;
+  z-index: 1;
+  padding-top: 20%;
+}
+@media only screen and (max-width: 1024px) {
+  .heading .right-image {
     margin: auto;
-    max-width: 70%;
-    border: 1px solid red !important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .heading {
+    padding: 2.75rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .heading {
+    flex-direction: column;
+    padding: 1rem;
+  }
 }
 
-.banner-img {
-    width: 100%;
+.listitems {
+  width: 100%;
+  padding: 6.75rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
+.listitems > button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  flex-basis: 32%;
+  background-color: #056E31;
+  text-align: left;
+  font-family: "AirFactoryRounded", Arial, Helvetica, sans-serif;
+  border: 0;
+}
+.listitems > button > a {
+  color: white;
+  font-weight: 400;
+  font-size: 1.438rem;
+  text-decoration: none;
+}
+@media only screen and (max-width: 1024px) {
+  .listitems > button {
+    flex-basis: 48%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .listitems > button {
+    flex-basis: 100%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .listitems {
+    padding: 2.75rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .listitems {
+    padding: 1rem;
+  }
+}
+
+.map {
+  width: 100%;
+  padding-top: 0 !important;
+  padding: 6.75rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.map > img {
+  width: 100%;
+}
+@media only screen and (max-width: 1024px) {
+  .map {
+    padding: 2.75rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .map {
+    padding: 1rem;
+  }
+}
+
+.we {
+  width: 100%;
+  padding-top: 0 !important;
+  padding: 6.75rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: "AirFactoryRounded", Arial, Helvetica, sans-serif;
+}
+.we > h1 {
+  width: 100%;
+  color: black;
+  text-align: center;
+  margin-bottom: 3.625rem;
+  font-size: 3.125rem;
+}
+.we > p {
+  font-size: 1.563rem;
+}
+@media only screen and (max-width: 1024px) {
+  .we {
+    padding: 2.75rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .we {
+    padding: 1rem;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-container {
+  display: inherit;
+  flex-direction: row;
+  padding: 1rem 2rem;
+  border-top: 1px solid #CDCDCD;
+  border-bottom: 1px solid #CDCDCD;
+}
+footer .footer-container > * {
+  width: 100%;
+}
+footer .footer-container img {
+  height: 200;
+  width: auto;
+}
+footer .footer-container .footer-logo {
+  display: flex;
+  flex-basis: 40%;
+}
+@media only screen and (max-width: 767px) {
+  footer .footer-container .footer-logo {
+    justify-content: center;
+    flex-basis: 100%;
+  }
+}
+footer .footer-container .footer-message {
+  display: inherit;
+  align-items: center;
+  flex-basis: 60%;
+  font-family: "AirFactoryRounded";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+}
+@media only screen and (max-width: 767px) {
+  footer .footer-container .footer-message {
+    align-items: center;
+    flex-basis: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  footer .footer-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
+footer .copyright {
+  padding: 1rem;
+  display: inherit;
+  flex-direction: row;
+  justify-content: center;
+}
+@media only screen and (max-width: 767px) {
+  footer .copyright {
+    text-align: center;
+  }
+}
+
+.site-content-404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+  min-height: 50vh;
+}
+.site-content-404 .entry-header {
+  background-color: initial;
+}
+.site-content-404 form .text-404 {
+  border: 1px solid black;
+  padding: 0.25rem 0.5rem;
+}
+.site-content-404 form .submit {
+  background-color: #056E31;
+  color: white;
+  padding: 0.3rem 0.5rem;
+  border: 0;
+}
+.site-content-404 .home-link {
+  margin-top: 0.5rem;
+}
+.site-content-404 a {
+  text-decoration: none;
+}
+.site-content-404 .fa {
+  margin-right: 0.2rem;
+}
+@media only screen and (max-width: 767px) {
+  .site-content-404 {
+    padding: 4rem 2rem;
+  }
+}
+
+.site-content-search {
+  color: black;
+}
+.site-content-search header {
+  background-color: initial;
+}
+.site-content-search > .search-results {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: inherit;
+  padding: 4rem;
+}
+@media only screen and (max-width: 1024px) {
+  .site-content-search > .search-results {
+    padding: 1rem;
+  }
+}
+.site-content-search article {
+  border: 2px solid black;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.site-content-search article a {
+  text-decoration: none;
+  color: black;
+}
+.site-content-search article + article {
+  margin-top: 1rem;
+}
+.site-content-search article .content {
+  margin: 1.5rem;
+  overflow: hidden;
+  min-height: 100%;
+  max-height: 15rem;
+}
+.site-content-search article .entry-header-search {
+  font-weight: 700;
+}
+.site-content-search article .entry-content-search {
+  white-space: nowrap;
+  word-break: break-all;
+  overflow: hidden;
+}
+.site-content-search article:hover {
+  border-color: #056E31;
+  color: #056E31;
+}
+.site-content-search article:hover a {
+  color: inherit;
+}/*# sourceMappingURL=style.css.map */
